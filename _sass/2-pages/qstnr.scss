@@ -1,0 +1,153 @@
+header.vl-qs{
+	overflow:hidden;
+	.text-holder{
+		h1{
+			font-size:3em;
+		}
+	}
+	.header-media{
+		img{
+			position: relative;
+			width:600px;
+			display: block;
+		}
+
+		> div{
+			position: absolute;
+			width:33px;
+			height: 33px;
+			background:$accent;
+			border-radius:50%;
+			cursor: pointer;
+			animation:animatedCircles 5s infinite ease-in-out alternate;
+			transition: .3s;
+			&:hover{
+				background: #000;
+			}
+			&:hover:before {
+				background: #FFF;
+			}
+			&:hover{
+				background: #000;
+			}
+			&:after{
+				content: "";
+			    display: block;
+			    width: 50px;
+			    left: -9px;
+			    top: -8px;
+			    height: 50px;
+			    border: 3px solid #00A8FF;
+			    border-radius: 50%;
+			    position: absolute;
+			}
+			&:before{
+			    content: "";
+			    display: block;
+			    width: 8px;
+			    border-radius: 50%;
+			    left: 7px;
+			    top: -10px;
+			    z-index: 9999;
+			    height: 8px;
+			    background: #101010;
+			    position: absolute;
+			}
+		}
+
+		@keyframes animatedCircles {
+			0%{
+				transform:rotate(0deg);
+			}
+			100%{
+				transform:rotate(360deg) scale(0.8);
+			}
+		}
+
+		.dot-arm-1{
+		    top: 23%;
+		    left: 21%;
+		}
+		.dot-arm-2{
+		    top: 20%;
+		    left: 76%;
+		}
+		.dot-arm-3{
+		    top: 37%;
+		    left: 29%;
+		}
+		.dot-knee{
+		    top: 49%;
+		    left: 29%;
+		}
+		.dot-hip{
+		    top: 31%;
+		    left: 51%;
+		}
+		.dot-leg{
+		    top: 77%;
+		    left: 80%;
+		}
+	}
+}
+// only when questionnaire is active
+// body{
+// 	overflow:hidden;
+// }
+.questionnaire{
+	overflow:hidden;
+	position: absolute;
+	top:0;
+	height: 100%;
+	width:100%;
+	z-index: 9999999;
+	background:#FFF;
+	margin:0;
+	padding:0;
+	// display: none;
+	.welcome{
+		width:700px;
+		margin:0 auto;
+		text-align: center;
+		display: none; 
+		h1{
+			font-size:3.2em;
+		}
+		p{
+			font-size:2em;
+			color:$textc;
+		}
+	}
+	#questions{
+		// opacity: 0;
+		.question{
+			text-align:center;
+		}
+		#options{
+			.options-ul{
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.option{
+				font-size:1.2em;
+				padding:20px;
+				margin:10px;
+				box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.12);
+				border-radius:10px;
+				cursor:pointer;
+				font-weight: bold;
+				&:hover{
+					transition: .3s;
+					background:$accent;
+					color:#FFF;
+					transform:scale(1.05) !important;
+				}
+			}
+			.not{
+				background:#e84118;
+				color:#FFF;
+			}
+		}
+	}
+}

@@ -1,0 +1,145 @@
+{
+    "footIssues": {
+        "options": {
+            "1": [
+                {
+                    "op": "ankle",
+                    "slot": "0"
+                },
+                {
+                    "op": "heel",
+                    "slot": "1"
+                },
+                {
+                    "op": "arch",
+                    "slot": "2"
+                },
+                {
+                    "op": "mid foot",
+                    "slot": "3"
+                },
+                {
+                    "op": "fore foot",
+                    "slot": "4"
+                },
+                {
+                    "op": "big toe",
+                    "slot": "5"
+                }
+            ],
+            "2": [
+                {
+                    "op": [
+                        "Inside or Outside of the ankle?",
+                        "Ankle Sprain",
+                        "Instability in walking",
+                        "Excessive pronation"
+                    ],
+                    "slot": "0"
+                },
+                {
+                    "op": [
+                        "Back of the heel or Bottom of the heel or both?",
+                        "heel spurs"
+                    ],
+                    "slot": "1"
+                },
+                {
+                    "op": [
+                        "Medial ligaments",
+                        "Plantar fascitis",
+                        "tib post tendinitis"
+                    ],
+                    "slot": "2"
+                },
+                {
+                    "op": [
+                        "Cuboid Subluxation",
+                        "Pronation (flat feet) medial",
+                        "Supination (high arch) lateral",
+                        "Mid Foot Coalitions"
+                    ],
+                    "slot": "3"
+                },
+                {
+                    "op": [
+                        "Metatarsaliga ",
+                        "Morton’s Neuroma"
+                    ],
+                    "slot": "4"
+                },
+                {
+                    "op": [
+                        "Bunions",
+                        "Hallux Limitus/Rigitus",
+                        "Turf Toe",
+                        "Gout",
+                        "Sesamoiditis"
+                    ],
+                    "slot": "5"
+                }
+            ],
+            "3": [
+                {
+                    "op": [
+                        [
+                            "Do you genetically have a flat foot?",
+                            "Can you build an arch with your foot?",
+                            {
+                                "ans": [
+                                    "Everyday sports orthorotic ",
+                                    "Massage ball for calf trigger point",
+                                    "Theraband for weak glutes",
+                                    "Theraband for rehabing STJ for mobility"
+                                ]
+                            }
+                        ],
+                        [
+                            "Weak Ankles?",
+                            "Unstable feet and gait?",
+                            "Chronic Instability at ankles?",
+                            "Twisted ankle?",
+                            {
+                                "ans": [
+                                    "Everyday sports orthorotic ",
+                                    "Massage ball for calf trigger point",
+                                    "Theraband for weak glutes",
+                                    "Theraband for rehabing STJ for mobility"
+                                ]
+                            }
+                        ],
+                        [
+                            "Swelling + Brusing at the ankle?",
+                            "Numbness? Tingling? Burning?",
+                            {
+                                "ans": [
+                                    "Everyday sports orthorotic ",
+                                    "- Massage ball for adductor hallicus and quadratus plantae release",
+                                    "- Theraband for weak glutes",
+                                    "Theraband for rehabing STJ for mobility"
+                                ]
+                            }
+                        ],
+                        [
+                            "Pain at the inside of the ankle?",
+                            "Overuse/ repetitive activity?",
+                            "Soreness at the middle of the calf?",
+                            "Deep soreness?",
+                            "Flat feet?",
+                            "Can not balance on single leg for long?",
+                            "Soreness also at the base of the foot?"
+                        ],
+                        {
+                            "ans": [
+                                "Everyday sports orthorotic ",
+                                "Massage ball for calf trigger point",
+                                "Theraband for weak glutes"
+                            ]
+                        }
+                    ],
+                    "slot": "0"
+                }
+            ]
+        }
+    }
+}

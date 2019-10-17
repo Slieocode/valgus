@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<header class="header-blog" style="background:url('{{site.url}}/{{page.featImg}}')">
+	<div class="about-nav">
+		{% include navbar.html %}		
+	</div>
+	<div class="blog-overlay">
+		<div class="overlay"></div>		
+	</div>
+</header>
+<section class="blog-content">
+	<div class="container">
+		<article class="blog-text-holder">
+			<div class="author-avatar">
+				<img src="{{ site.url }}{{ site.data.authors[page.author].avatar }}" alt="{{site.data.authors[page.author].name}}">
+				<p><i class="fas fa-pen-alt"></i> Written By <span class="underline">{{site.data.authors[page.author].name}}</span> </p>
+				<p><i class="fas fa-file-alt"></i> On: <span class="underline">{{page.date | date:"%B %e, %Y"}}</span> </p>
+			</div>
+			<hr>
+			<h1>{{ page.title }}</h1>
+			<hr>
+			{{ content }}
+		</article>
+	</div>
+</section>
+
+	<div class="container">
+		<div class="all-articles-holder">
+			<h1 style="text-align: center;">You Might Want to read</h1>
+			<section class="card-holder readMore">
+				{% for post in site.posts limit:3 %}
+					<a href="{{post.url}}" class="card-link">
+						<div class="card">
+						  <div class="card-img-top" style='background:url("{{site.url}}/{{post.featImg}}");' alt="Blog image cap"></div>
+						  <div class="card-block">
+						    <div class="category">{{post.categories}}</div>
+						    <h3 class="card-title">{{post.title}}</h3>
+						  </div>
+						</div>
+					</a>
+				{% endfor %}
+			</section>
+		</div>
+	</div>
+
+{% include footer.html %}
