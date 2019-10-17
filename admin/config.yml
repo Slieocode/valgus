@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "assets/blogs/img/uploads"
+public_folder: "assets/blogs/img/uploads"
+
+
+collections:
+  #Blog Post Collections 
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "post" # Used in the UI
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    format: frontmatter
+    extension: html
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "category (must be lowercase And use dashes between Words e.g: business-marketing)", name: "categories", widget: "string"}
+      - {label: "Sub Category (must be lowercase And use dashes between Words e.g: ecommerce)", name: "tags", widget: "string"}
+      - {label: "author", name: "author", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Comments", name: "comments", widget: "boolean", default: true}      
+      - {label: "Featured Image", name: "featImg", widget: "image", default: '/uploads'}
+      - {label: "Body", name: "body", widget: "markdown"}
