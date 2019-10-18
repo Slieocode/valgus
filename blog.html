@@ -1,0 +1,40 @@
+---
+layout: default
+---
+	<header class="articles-header">
+		<div class="about-nav">
+			{% include navbar.html %}
+		</div>
+	</header>
+		<div class="container">
+		<div class="page">
+			<main class="main-wrap page__folder">
+				<div class="codrops-header">
+					<h1><span class="underline">Articles You Might Like!</span></h1>
+				</div>
+				<hr class="fasil">
+				<div class="all-articles-holder">	
+				<h1 class="category-title"> {{ tag }}</h1>
+					<section class="card-holder">
+					{% for post in site.posts %}	
+						<a href="{{post.url}}" class="card-link">
+							<div class="card">
+							  <div class="card-img-top" style='background:url("{{site.url}}/{{post.featImg}}");' alt="Blog image cap">
+							  </div>
+							  <div class="card-block">
+							    <div class=" category-title category">{{post.categories | join:' '}}
+							    </div>
+									<span style="color:#E89800">  > {{ post.tags }}</span>
+							    <h3 class="card-title">{{post.title}}</h3>
+							  </div>
+							</div>
+						</a>
+					 {% endfor %}
+					</section>
+				</div>
+		</main>
+	</div>
+</div>
+
+{% include footer.html %}
+
