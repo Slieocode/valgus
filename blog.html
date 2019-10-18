@@ -14,17 +14,16 @@ layout: default
 				</div>
 				<hr class="fasil">
 				<div class="all-articles-holder">	
-				<h1 class="category-title"> {{ tag }}</h1>
-					<section class="card-holder">
+<!-- 				<h1 class="category-title"> {{ tag }}</h1>
+ -->					<section class="card-holder">
 					{% for post in site.posts %}	
 						<a href="{{post.url}}" class="card-link">
 							<div class="card">
 							  <div class="card-img-top" style='background:url("{{site.url}}/{{post.featImg}}");' alt="Blog image cap">
 							  </div>
 							  <div class="card-block">
-							    <div class=" category-title category">{{post.categories | join:' '}}
+							    <div class=" category-title category"> > {{post.categories | join:' '}}
 							    </div>
-									<span style="color:#E89800">  > {{ post.tags }}</span>
 							    <h3 class="card-title">{{post.title}}</h3>
 							  </div>
 							</div>
