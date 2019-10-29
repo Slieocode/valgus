@@ -18,14 +18,15 @@
 .blog-content{
 	background:#FFF;
 	margin-top:0;
+	img{
+		width:100% !important;
+	}
+
 }
 .readMore{
 	justify-content: center !important;
 }
 article{
-	img{
-		width:100% !important;
-	}
     width: 74%;
     margin: -0% auto;
     z-index: 99;
