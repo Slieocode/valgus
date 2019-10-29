@@ -1,14 +1,4 @@
 header{
-	.offer{
-		display: flex;
-		justify-content: center;
-		font-size:15px;
-		font-weight: 800;
-		background:rgba(0,0,0,0.05);
-		p{
-			word-spacing: 5px;
-		}
-	}
 	.wrapper{
 	  width: 100%;
 	  height: 90vh;
@@ -89,6 +79,9 @@ header{
 }
 
 .features{
+	.row{
+		display: block !important;
+	}
 	.feature{
 		height: 600px;
 		display: flex;
@@ -117,13 +110,8 @@ header{
 .blog{
 	 > h1{margin-bottom: 5%;text-align: center;}
 	.cards-wrapper {
-	  display: grid;
-	  justify-content: center;
-	  align-items: center;
-	  grid-template-columns: 1fr 1fr 1fr;
-	  grid-gap: 4rem;
-	  margin: 0 auto;
-	  width: max-content;
+	  display: flex;
+	  justify-content: space-around;
 	}
 
 	.card {
@@ -253,43 +241,81 @@ header{
 	  font-weight: normal;
 	}
 
-	/* MEDIA QUERIES */
-	@media screen and (max-width: 1285px) {
-	  .cards-wrapper {
-	    grid-template-columns: 1fr 1fr;
-	  }
-	}
-
-	@media screen and (max-width: 900px) {
-	  .cards-wrapper {
-	    grid-template-columns: 1fr;
-	  }
-	  .info {
-	    justify-content: center;
-	  }
-	  .card-grid-space .num {
-	    margin-left: 0;
-	    text-align: center;
-	  }
-	}
-
-	@media screen and (max-width: 500px) {
-	  .cards-wrapper {
-	    padding: 4rem 2rem;
-	  }
-	  .card {
-	    max-width: calc(100vw - 4rem);
-	  }
-	}
-
-	@media screen and (max-width: 450px) {
-	  .info {
-	    display: block;
-	    text-align: center;
-	  }
-	  .info h1 {
-	    margin: 0;
-	  }
-	}
 }
 
+
+ @media screen and (max-width: 798px){
+ 	.offer{
+ 		justify-content: space-around;
+ 		p {
+ 		    font-size: 12px !important;
+		    margin-left: 49px;
+ 		}
+ 	} 
+	header{
+		.wrapper{
+			height: auto !important; 
+		}		
+		main{
+			flex-direction: column;
+			height: 100vh !important;
+			.typing h1{
+				font-size: 2.5em !important;
+			}
+		}
+	}
+	.features{
+		.feature{
+			height: auto !important;
+			flex-direction: column;
+			text-align: center;
+			.mediaTxt{
+				padding:15px;
+			}
+		}
+	}
+ 	
+ }
+	
+@media screen and (max-width: 1285px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info {
+    justify-content: center;
+  }
+  .card-grid-space {
+	margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards-wrapper {
+    padding: 4rem 2rem;
+  }
+  .card {
+    max-width: calc(100vw - 4rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    display: block;
+    text-align: center;
+  }
+  .info h1 {
+    margin: 0;
+  }
+}
+
+
+
+
+	

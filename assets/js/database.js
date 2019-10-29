@@ -1,78 +1,343 @@
 const data = {
 "male":{
-
-
   "Lower Back Issues":{
-
-	},
-  "Knee Issues":{
-
-	},
-  "hip Issues":{
-
+  			"1":{
+		   	 "limping or having trouble walking":"op", 
+		   	 "Hurting in Left, Right, Or Center area":"op", //x
+		   	 "Pelvis instability/Hypermobility":"op",//x
+		   	 "Excessive pronation":"op", //x 
+		   	 "slot":"Lower Back Issues-op"  				
+  			},
+  			"2":{
+		   	   "Everyday or sports orthotic":"op",
+		   	   "heel lift":"op",
+			   "Massage ball to tight muscles + lower back":"op", 
+			   "Massage ball to tight Sartorius, Gracillus, Semitendinosis (hamstrings)":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+  			   "slot":["limping or having trouble walking-op", "Hurting in Left, Right, Or Center area-op", "Pelvis instability/Hypermobility-op", "Excessive pronation-op"]
+  			}
    },
 
-  "foot Issues":{
+  "Knee Issues":{
+			"1": {
+		   	 "medial/inside":"op", 
+		   	 "lateral/outside":"op", //x
+		   	 "anterior Knee":"op",//x
+		   	 "behind knee":"op", //x 
+		   	 "slot":"Knee Issues-op"
+		   },
+		   "2":{
+			   "Strengthen VMO":"op", 
+		   	   "Everyday or sports orthotic + 4 degree valgus post":"op",
+			   "Massage ball to tight Quads, ITB":"op", 
+			   "Massage ball to tight Sartorius, Gracillus, Semitendinosis (hamstrings)":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["medial/inside-op"],		   	
+		   },
+		   "3":{
+		   	   "Everyday or sports orthotic + 4 degree valgus post":"op", //example lateral knee
+			   "Strengthen VMO":"op", 
+			   "Massage ball to tight Quads, ITB":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["lateral/outside-op"],		   	
+		   },
+		   "4":{
+		   	   "Everyday or sports orthotic":"op", //example lateral knee
+			   "Strengthen VMO":"op", 
+			   "Massage ball to tight Quads, above knee, ITB":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["anterior Knee-op"],		   	
+		   },
+		   "5":{
+		   	   "Everyday or sports orthotic":"op", 
+			   "Strengthen VMO":"op", 
+			   "Massage ball to tight fib head, calf, lower ankle":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["behind knee-op"],		   	
+		   }
+	},
+
+  "Hip Issues":{
+			"1": {
+		   	 "front":"op", 
+		   	 "side":"op", //x
+		   	 "behind":"op",//x
+		   	 "medial":"op", //x 
+		   	 "slot":"Hip Issues-op"
+		   },
+		   "2":{
+		   	   "Everyday or sports orthotic":"op", 
+			   "Massage ball to tight hip flexors, quad":"op",
+			   "Massage ball to tight psoas and hip flexors":"op",
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["front-op"],		   	 
+		   }, 		
+		   "3":{
+		   	   "Everyday or sports orthotic":"op", 
+			   "Massage ball holding and squezing ball":"op",
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["side-op"],		   	 
+		   },
+		   "4":{
+		   	   "Everyday or sports orthotic":"op", 
+			   "Massage ball to tight glut max and piriformus":"op",
+			   "note: neural flossing":"op",
+			   "note: Rehab work on hamstrings":"op",
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["behind-op"],		   	 		   	
+		   }, 		
+		   "5":{
+		   	   "Everyday or sports orthotic":"op", 
+			   "Massage ball to tight hip":"op",
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["medial-op"],		   	 		   	
+		   } 		
+   },
+
+  "Foot Issues":{
   			"1": {
-				   	 "ankle":"op",
-				   	 "heel":"op",
-				   	 "arch":"op",
-				   	 "mid foot":"op",
-				   	 "fore foot":"op",
-				   	 "big toe":"op",
-				   	 "slot":"foot Issues-op"
-				   },
-			"2":{ 
-					"Inside or Outside of the ankle?":"op", 
-					"Ankle Sprain":"op", 
-					"Instability in walking":"op",
-					"Excessive pronation":"op",
-					"slot":"ankle-op", 
-				},
-			
-			"3":{
-				"Do you genetically have a flat foot?":"op",
-				"Can you build an arch with your foot?":"op", 
-				"none":"op",
-				"slot":["Excessive pronation-op", "Instability in walking-op", "Ankle Sprain-op", "Inside or Outside of the ankle?-op"]  					
-				},
-			
-			"4":{
+			   	 "ankle":"op", //x
+			   	 "heel":"op", //x
+			   	 "arch":"op",//x
+			   	 "mid foot":"op", //x 
+			   	 "fore foot":"op", //x
+			   	 "big toe":"op", //x
+			   	 "base of heel":"op", //x
+			   	 "posterior heel":"op",//x
+			   	 "medial ankle":"op", //x
+			   	 "medial arch and mid foot":"op", //x
+			   	 "lateral ankle and mid foot":"op", //X
+			   	 "true mid foot and forefoot":"op",//* 
+			   	 "lesser digits":"op",//x
+			   	 "slot":"Foot Issues-op"
+			   },
+			"2":{
 			   "Massage ball for calf trigger point":"op", 
+			   "Massage ball for tib post release":"op", 
+			   "Massage ball for adductor hallicus and quadratus plantae release":"op", 
 		 	 	"Theraband for weak glutes":"op", 
+		 	 	"Everyday or sports Orthotic":"op", 
 		 	 	"Theraband for rehabing STJ for mobility":"op",
-			    "slot":["Can you build an arch with your foot?-op", "Do you genetically have a flat foot?-op"],
-				}  				  			  				
+			    "slot":["ankle-op", "medial ankle-op"],
+			},  				  			  				
+			"3":{
+		 	   "heel lift":"op",
+		 	   "Everyday or sports Orthotic + 4-6 degree valgus post":"op", 
+			   "Massage ball":"op", 
+			   "Massage ball to strengthen tib post":"op", 
+			   "Massage ball for adductor hallicus":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for stretching calf":"op",
+			   "slot":["heel-op", "base of heel-op"],
+			},
+			"4":{
+		 	   "Theraband for foot circular movements":"op", 
+		 	   "Everyday or sports Orthotic + 4 degree valgus post":"op", 
+			   "Massage ball to release peroneal tendon":"op", 
+		 	   "Everyday or sports Orthotic":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op", 
+			   "Massage ball to strengthen tib post":"op", 
+			   "Massage ball":"op", 
+		 	   "Theraband for weak glutes":"op", 
+			   "slot":["lateral ankle and mid foot-op", "mid foot-op"],
+			},
+		   "5":{
+		 	   "Everyday or sports Orthotic + 4 degree heel lift":"op",
+		 	   "Everyday or sports Orthotic(Cushioning at the back of heel)":"op", 		 	    
+		 	   "Theraband for rehabing STJ for mobility":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for stretching calf":"op", 
+			   "slot":["posterior heel-op"],
+			},
+		   "6":{
+			   "stability work":"op", 
+		 	   "Everyday or sports Orthotic + 4 degree valgus post":"op", 
+			   "Massage ball for adductor hallicus and quadratus plantae release":"op", 			    
+		 	   "Everyday or sports Orthotic":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op", 
+			   "Massage ball to strengthen tib post":"op", 
+			   "Massage ball":"op", 
+			   "heel lift":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for stretching calf":"op", 
+			   "slot":["medial arch and mid foot-op", "arch-op"],
+			},
+			"7":{
+			   "stability work":"op", 
+			   "single leg stance":"op", 
+			   "Massage ball to release fasica":"op", 
+		 	   "Theraband for stretching calf":"op", 
+		 	   "Everyday or sports Orthotic + met dome":"op", 
+		 	   "Everyday or sports Orthotic":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op", 
+		 	   "Theraband for for foot circular movements":"op", 
+			   "Massage ball to met heads":"op", 
+			   "heel lift":"op", 
+		 	   "Theraband for weak glutes":"op", 
+			   "slot":["true mid foot and forefoot-op", "fore foot-op"],
+			}, 
+			"8":{
+			   "Everyday or sports orthotic with possible 1st met extentsion":"op", 
+			   "Massage ball to release fasica":"op", 
+			   "Massage ball for adductor hallicus":"op", 
+		 	   "Everyday or sports Orthotic":"op", 
+		 	   "Theraband for rehabing STJ for hallux mobility":"op", 
+		 	   "Theraband for weak glutes":"op", 
+			   "slot":["big toe-op"],
+			}, 
+			"9":{
+			   "Everyday or sports orthotic + 4 degree valgus post":"op", 
+			   "Massage ball to tight extensors and calf":"op", 
+			   "Massage ball for adductor hallicus":"op", 
+		 	   "Everyday or sports Orthotic":"op", 
+		 	   "Theraband for rehabing STJ for hallux mobility":"op", 
+		 	   "Theraband for weak glutes":"op", 
+			   "slot":["lesser digits-op"],
+			}  				  			  				
 	
 	 },
-	 "slot":"male-op"	
+	 "Calf Issues":{
+  			"1": {
+  				  "anterior":"op",
+  				  "posterior":"op",
+  				  "lateral":"op",
+			   	  "slot":"Calf Issues-op"
+			   },
+			"2":{
+		 	   "Everyday or sports Orthotic + Possible 4 degree varus ":"op", 
+			   "Massage ball for calf trigger point":"op", 
+			   "Massage ball to tight tib ant":"op",
+			   "Massage ball to tight extensors and calf":"op",
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+		 	   "note:if you feel or see redness, swelling, painful calf or calves please contact your GP immediately":"op",
+			   "slot":["anterior-op"],
+			},  				  			  				
+			"3":{
+		 	   "Everyday or sports Orthotic":"op", 
+			   "Massage ball for calf trigger point":"op", 
+			   "Massage ball to tight calves, gastroc, soleus, hamstrings":"op",
+			   "note: Rehab exercises for soleus and gastroc":"op",
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op",
+			   "slot":["posterior-op"],
+			},  				  			  				
+			"4":{
+				"note: peroneal tightness & fibular Restriction":"op",	
+			   "slot":["lateral-op"],
+			},  				  			  				
+
+	 },	 
+	"slot":["male-op", "female-op"]	
+	},
+
+	"female":"op",
+	
+	"child":{
+		  "age between 3-12":"op",
+		  "age between 7-13":"op",
+		  "age between 13-17":"op",
+		  "slot":["child-op"],
+	},
+	"1":{
+		  "foot issues":"op",
+		  "hip issues":"op",
+		  "lower back issues":"op",
+		  "knee issues":"op",
+		  "ankle issues":"op",
+		  "slot":["age between 3-12-op", "age between 13-17-op"] // merged
+	},
+	"2":{
+		"in toeing":"op",
+		"out toeing":"op",
+		"slot":"foot issues-op"
+	},
+	"3":{
+   	   "Out toe gait plate Everyday + sports orthotic":"op",
+	   "Massage ball to tight muscles + lower back":"op", 
+ 	   "Theraband for weak glutes":"op", 
+ 	   "Theraband for rehabing STJ for mobility":"op",
+ 	   "slot":["in toeing-op"]
+	},
+	"4":{
+   	   "in toe gait plate Everyday + sports orthotic":"op",
+	   "Massage ball to tight muscles + lower back":"op", 
+ 	   "Theraband for weak glutes":"op", 
+ 	   "Theraband for rehabing STJ for mobility":"op",
+ 	   "slot":["out toeing-op"]
+	},
+	"5":{
+   	   "Everyday or sports orthotic":"op",
+   	   "heel lift":"op",
+	   "Massage ball to tight muscles + lower back":"op", 
+	   "Massage ball to tight muscles + lower back  + hamstrings":"op", 
+ 	   "Theraband for weak glutes":"op", 
+ 	   "Theraband for rehabing STJ for mobility":"op",
+ 	   "slot":["hip issues-op", "lower back issues-op"]
+	},
+	"6":{
+   	   "Everyday or sports orthotic":"op",
+	   "Massage ball to tight muscles + lower back":"op", 
+ 	   "Theraband for weak glutes":"op", 
+ 	   "Theraband for rehabing STJ for mobility/ hip mobility":"op",
+   	   "heel lift":"op",
+ 	   "slot":["knee issues-op", "ankle issues-op"]
+	},
+	"1-1":{
+		  "Foot issues":"op",
+		  "Hip issues":"op",
+		  "Lower back issues":"op",
+		  "Knee issues":"op",
+		  "Ankle issues":"op",
+		  "slot":["age between 7-13-op"]
+	},
+	"1-2":{
+	   	  "Everyday or sports orthotic":"op",
+	   	  "heel lift":"op",
+		  "Massage ball to tight muscles + calves":"op", 
+	 	  "Theraband for weak glutes and stability work":"op", 
+	 	  "Theraband for rehabing STJ for mobility":"op",
+	 	  "slot":["Foot issues-op"]		
+	},
+	"1-3":{
+	   	  "Everyday or sports orthotic":"op",
+		  "Massage ball to tight muscles + quad/ hamstring":"op", 
+	 	  "Theraband for weak glutes and stability work":"op", 
+	 	  "Theraband for rehabing STJ for mobility":"op",
+	 	  "slot":["Knee issues-op", "Ankle issues-op", "Lower back issues-op", "Hip issues-op"]		
 	}
+
 }              
-  			// "2":{"val":[
-  			//    {"op":["Back of the heel or Bottom of the heel or both?","heel spurs" ], "slot":"heel-op"},
-  			// 	{"op":["Medial ligaments","Plantar fascitis", "tib post tendinitis"], "slot":"arch-op"},
-  			// 	{"op":["Cuboid Subluxation","Pronation (flat feet) medial", "Supination (high arch) lateral", "Mid Foot Coalitions"], "slot":"mid foot-op"},
-  			// 	{"op":["Metatarsaliga ","Morton’s Neuroma"], "slot":"fore foot-op"},
-  			// 	{"op":["Bunions","Hallux Limitus/Rigitus", "Turf Toe", "Gout", "Sesamoiditis"], "slot":"big toe-op"},
-  			// ], "slot":"ft-2"},
 
-// "3":[
-// 	  				["Weak Ankles?", "Unstable feet and gait?", "Chronic Instability at ankles?", "Twisted ankle?", {
-// 	  				 	 "ans":["Everyday sports orthorotic ",
-// 		  				 	 	"Massage ball for calf trigger point", 
-// 		  				 	 	"Theraband for weak glutes", 
-// 		  				 	 	"Theraband for rehabing STJ for mobility"]
-// 	  				 }],
 
-// 	  				  ["Swelling + Brusing at the ankle?", "Numbness? Tingling? Burning?", {
-// 	  				 	 "ans":["Everyday sports orthorotic ",
-// 		  				 	 	"- Massage ball for adductor hallicus and quadratus plantae release", 
-// 		  				 	 	"- Theraband for weak glutes", 
-// 		  				 	 	"Theraband for rehabing STJ for mobility"]
-// 	  				 }], ["Pain at the inside of the ankle?", "Overuse/ repetitive activity?", "Soreness at the middle of the calf?","Deep soreness?","Flat feet?","Can not balance on single leg for long?","Soreness also at the base of the foot?"], {
-// 	  				 	 "ans":["Everyday sports orthorotic ",
-// 		  				 	 	"Massage ball for calf trigger point", 
-// 		  				 	 	"Theraband for weak glutes"]
-// 	  				 }], "slot":"0"
-//   				},
-//   			]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

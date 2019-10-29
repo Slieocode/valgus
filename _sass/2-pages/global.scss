@@ -34,6 +34,19 @@ hr{
   left:-100%;
 }
 
+.color-switch{
+    color:#FFF !important;
+    &:before{
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(255, 255, 255) !important;
+    border-radius: 49% 51% 54% 46%/58% 43% 57% 42%;
+        }
+    &:after{
+    border: 2px solid rgb(255, 255, 255) !important;
+    border-radius: 49% 51% 54% 46%/58% 43% 57% 42%;
+    }
+}
 /* Links
   ------------------------------------  */
 // a
@@ -185,4 +198,243 @@ fieldset{
    font-size: 1.2em;
    line-height: 1.8;
    text-align: justify;
+}
+
+// Product zoom feature
+#glass{
+   position:absolute;
+  border-radius:50%;
+  box-shadow:0 0 0 7px rgba(255,255,255,0.85),0 0 7px 7px rgba(0,0,0,0.25),inset 0 0 40px 2px rgba(0,0,0,0.25);
+  display:none;
+  background-repeat:no-repeat;
+  background-color: rgba(0,0,0,.6);
+}
+
+/* Shopping Cart */
+
+.cart-btn {
+  position: relative;
+}
+
+
+.pulse-button {
+  position: fixed;
+  top:80%;
+  left:5%;
+  z-index: 9;
+  padding:5px;
+  outline: none;
+  border:3px solid #F44336;
+  display: block;
+  width: 65px;
+  height: 65px;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: #F44336;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(#F44336, .8);
+  -webkit-animation: pulse 1.5s infinite;
+  transition:.3s;
+  svg{
+      // transform:scale(-1,1);
+      fill:#FFF;
+  }
+}
+.pulse-button:hover {
+  -webkit-animation: none;
+  background:#FFF;
+  border:3px solid #F44336;
+  transform: scale(1.2)
+}
+.pulse-button:hover svg {
+  fill:#F44336;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+      transform:scale(.9);
+  }
+  70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 15px rgba($accent, 0);
+  }
+    100% {
+      transform:scale(.9);
+      box-shadow: 0 0 0 0 rgba($accent, 0);
+  }
+}
+
+.snipcart-modal__close{
+  color: #2196F3 !important;
+  font-weight: bold !important;
+
+}
+.snipcart-payment-methods__link{
+  display: none !important;
+}
+
+.snipcart-items-count{
+    position: absolute;
+    left: 65%;
+    top: -7%;
+    display: block;
+    background: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+/* Button Cart Effect */
+
+$fuschia: #000;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+
+
+.bubbly-button{
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $button-bg;
+  color: $button-text-color;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:before, &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+  
+  &:before{
+    display: none;
+    top: -75%;
+    background-image:  
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 20%, $button-bg 20%, transparent 30%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%), 
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+  //background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
+  }
+  
+  &:after{
+    display: none;
+    bottom: -75%;
+    background-image:  
+    radial-gradient(circle, $button-bg 20%, transparent 20%), 
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%),
+    radial-gradient(circle, $button-bg 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+  //background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  &:active{
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+  
+  &.animate{
+    &:before{
+      display: block;
+      z-index: 999;
+      animation: topBubbles ease-in-out 0.75s forwards;
+    }
+    &:after{
+      display: block;
+      z-index: 999;
+      animation: bottomBubbles ease-in-out 0.75s forwards;
+    }
+  }
+}
+
+
+@keyframes topBubbles {
+  0%{
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+    50% {
+      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
+ 100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+  }
+}
+
+@keyframes bottomBubbles {
+  0%{
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
+ 100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+  }
+}
+
+
+/* offer animation */
+
+.offer{
+    display: flex;
+    justify-content: center;
+    font-size:15px;
+    font-weight: 800;
+    p{
+      word-spacing: 5px;
+      color: #FFF;
+    }
+background: linear-gradient(270deg, #00a8ff, #000);
+background-size: 400% 400%;
+
+-webkit-animation: AnimationName 10s ease infinite;
+-moz-animation: AnimationName 10s ease infinite;
+-o-animation: AnimationName 10s ease infinite;
+animation: AnimationName 10s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
 }

@@ -2,6 +2,7 @@ $(document).ready(function(){
 	if($('.questionnaire').length){
 		$('body').css({overflow:"hidden"});
 	}
+
 	let tl = new TimelineMax({pause:true});
 	function staggerEffect(){
 		 tl.staggerFrom('.option', 0.5, {scale:"0", opacity:0,   ease:Power4.easeOut}, 0.2);		
@@ -43,25 +44,17 @@ $(document).ready(function(){
 	    return 'data["' + path.join('"]["') + '"]';            // otherwise format the path array into a string and return it
 	}	
 
-	function getList(obj){
-		let loop = Object.keys(data);
-	}
 
 	function populateData(clickedList){
-		// console.log(data[currentlyClicked])
+
 		let grabedObj = eval(findFormatted(data, clickedList+"-op").split('["slot"]').join(''));
 		let grablist;
 		if(!grabedObj){
-			console.warn(findFormatted(data, clickedList+"-op"))
 
 			grabedObj = findFormatted(data, clickedList+"-op").split('["slot"]');
 			grabedObj.pop();
 			grabedObj = grabedObj.join('')
 
-			// .join('').match(/\[(.*?)\]/g)
-			// grabedObj.pop();
-			// grabedObj = grabedObj.join("");
-			console.log(grabedObj)
 			grabedObj = eval(grabedObj);
 			grablist = Object.keys(grabedObj).filter(function(item){
 				return item !== "slot"
@@ -70,15 +63,25 @@ $(document).ready(function(){
 			    grablist = Object.keys(grabedObj);
 				grablist.pop();			
 		}
-			// console.error(findFormatted(data, clickedList+"-op").split('["slot"]').join(''))
-			// console.log(findFormatted(data, clickedList+"-op"))
-		// console.log(findFormatted(data, grablist))
 
-		// console.log(currentList)
+		// remove prev ul list
 		$(optionsFields).empty();
 
+		let products;
+		let REGEXP = new RegExp(/massage ball|tight|gait plate|everyday|sports|theraband|therabands|heel/, "gi");
+
 		for(i = 0; i < grablist.length; i+=1){
+			// filtering options & checking if there is a product to display
+			products = grablist[i].match(REGEXP);
+			// displaying & forming the products for the user to buy
+			if(products && products.length){
+
+				console.log(grablist[i])
+			
+			}
+			// appending options each time
 			$(optionsFields).append($("<li class='option'>"+ grablist[i] +"</li>")); 
+
 		}
 		staggerEffect();
 	}
@@ -87,23 +90,21 @@ $(document).ready(function(){
 		currentlyClicked = $(this).text();
 
 		populateData(currentlyClicked);
+		console
 	});
 
-	function getData(){
-		// firebase.database().ref().once('value', function(snapshot){
-		// 		console.log(snapshot.child('some').val())
-		// });
+	// function getData(){
 	
-		// fetch('./database.json')
-		// .then(function(res){
-		// 	return res.json();
-		// })
-		// .then((data) => {
-		// 	console.log(data)
-		// })
+	// 	fetch('./database.json')
+	// 	.then(function(res){
+	// 		return res.json();
+	// 	})
+	// 	.then((data) => {
+	// 		console.log(data)
+	// 	})
 
-		console.log(data)
-	}
-	getData();
+	// 	console.log(data)
+	// }
+	// getData();
 
 });

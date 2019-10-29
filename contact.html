@@ -1,0 +1,48 @@
+---
+layout: default
+---
+{% include navbar.html %}
+<header class="contact-header">
+	<div class="about-nav">
+	</div>
+	<div class="container">
+		<div class="faq-holder contact-holder">
+			<div class="faq-text contact-text">
+				<h1> We're Here to <span class="underline">help</span> </h1>
+				<p>All our knowledge right at your fingertips. <br> Ask questions. &nbsp;&nbsp;Find Answers.</p>
+			</div>
+		</div>
+	</div>
+ <div class="overlay"></div>
+</header>
+
+<section class="contact-form">
+	<div class="container">
+		<form  action="/thanks" method="post">
+		    <p style="color:#000"><b>GET IN TOUCH</b></p>
+<!-- 		     <input type='hidden' name='redirect_to' value='localhost:4000/thanks' />
+ -->		    <div class="login">
+				<label>
+				    <input type="text" required="required" name="Name" />
+				    <span>Name</span>
+				<label>
+				<label>
+				    <input type="text" required="required" name="Email" />
+				    <span>Email</span>					
+				</label>
+				    <select name="subject" id="subject">
+					    	<option value="male">male</option>
+					    	<option value="female">female</option>
+					    	<option value="child">child</option>
+					</select>
+			    <label class="msg" >
+			    <input type="text" required="required" class="area" name="content" />
+			     <span>Message</span>
+			    </label>
+		    </div>
+		    <button style="color:#FFF;font-weight: bold" class="btn" type="submit">Send Message</button>
+		</form>
+	</div>
+</section>
+
+{% include footer.html %}

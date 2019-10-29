@@ -1,19 +1,51 @@
+ .im-menu{
+    position: absolute;
+    color: #FFF;
+    left: 20px;
+    top: 9px;    
+    cursor: pointer;
+    display: none !important;
+  }
 nav{
-  // display: flex;
-  // padding:5px;
-   position: relative;
+  .triggerProducts{
+    display: none;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0;
+    margin-top: 40px;
+    margin-left: -54px;    
+    li a{
+      color: #000;
+      margin: 0;
+      padding: 0;
+      font-size: 1.2em;
+      font-weight: bold;
+      line-height: 3;
+    }
+  }
+  .productsLink{
+    i{
+      display: none;
+    }
+  }
+  .row{
+    margin-bottom: 0 !important
+  }
+  position: relative;
+  height: 86px;
+  line-height: 85px;
 
   .row{
     display: flex;
     justify-content: space-between;
   }
   .logo{
-    padding-top:1%;
-     img{
+    position: absolute;;
+    top:-25px;
+     svg{
       width:50%;
       height: 100%;
      }
-     transform:scale(.8);
   }
   .ul-nav{
       display: flex;
@@ -33,18 +65,28 @@ nav{
          }
      }
   }
-
     .productDrop{
+      > i {
+        position: absolute;
+        top: 28px;
+        z-index: 9999999999999;
+        left: 218px;
+        cursor: pointer;
+        display: none
+      }
       background:#FFF;
       width: 100vw;
+      height: auto;
       position: absolute;
-      z-index: 9999;
+      z-index: 9999999999;
       display: flex;
+      background:#FFF;
       justify-content: center;
       display: none;
       ul{
         margin-left:4%;
         padding:20px;
+        line-height: 1.9;
         h2{
           margin:0;
         }
@@ -61,8 +103,8 @@ nav{
 
 
 
-.cl-effect-12 .ul-nav a::before,
-.cl-effect-12 .ul-nav a::after {
+.cl-effect-12 .ul-nav a.linq::before,
+.cl-effect-12 .ul-nav a.linq::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,7 +122,7 @@ nav{
   transform: translateX(-50%) translateY(-50%) scale(0.2);
 }
 
-.cl-effect-12 .ul-nav a::after {
+.cl-effect-12 .ul-nav a.linq::after {
   width: 70px;
   height: 70px;
   border-width: 6px;
@@ -89,13 +131,107 @@ nav{
   transform: translateX(-50%) translateY(-50%) scale(0.8);
 }
 
-.cl-effect-12 .ul-nav a:hover::before,
-.cl-effect-12 .ul-nav a:hover::after,
-.cl-effect-12 .ul-nav a:focus::before,
-.cl-effect-12 .ul-nav a:focus::after {
+.cl-effect-12 .ul-nav a.linq:hover::before,
+.cl-effect-12 .ul-nav a.linq:hover::after,
+.cl-effect-12 .ul-nav a.linq:focus::before,
+.cl-effect-12 .ul-nav a.linq:focus::after {
   opacity: 1;
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
   -moz-transform: translateX(-50%) translateY(-50%) scale(1);
   transform: translateX(-50%) translateY(-50%) scale(1);
 }
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 798px){
+  .im-menu{
+    display: block !important;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left:-100%;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    width: 300px !important;
+    padding: 21px;
+    height: 100vh !important;
+    line-height: 54px !important;
+    z-index: 9999999;
+    background: #FFF;
+    overflow-y: scroll;
+    overflow-x: hidden;
+      .row{
+        flex-direction: column !important;
+        .logo{
+          position: static;
+          height: 137px !important;
+          width: 160px !important;
+          margin-left: -51px;
+          margin-top: -39px;
+          svg{
+            width: inherit;
+            height: inherit;
+          }          
+        }
+      }
+
+      .ul-nav{
+          justify-content: space-around;
+          align-items: flex-start;
+          flex-direction: column !important;
+          line-height: 57px;
+          margin:0;        
+          a{font-size: 1.3em !important;}
+      }
+  
+
+    // .triggerProducts{
+    //   display: block;
+    // }
+    .productsLink i{
+      transform: translate(204px, -36px);
+      font-size: 21px;      
+      display: block;
+    }
+    .productDrop{
+      > i {display: block;}
+      top:0;
+      background:#FFF;
+      width:300px !important;
+      height: 100% !important;
+      ul{
+        position: absolute;
+        height: 150%;
+        display: none;
+      }
+    }
+    .kids, .knee, .hip, .lower-back, .foot{
+      display: block !important;
+      width: 300px;
+      left: -9%;
+      background: #FFF;
+      height: 100vh;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

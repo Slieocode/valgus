@@ -1,5 +1,4 @@
 footer{
-	
 	.content-holder{
 		display:flex;
 		justify-content: space-between;
@@ -161,3 +160,45 @@ footer{
 		}
 	}
 } 
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 892px){
+	footer {
+		.content-holder{
+			flex-direction:column;
+		}		
+	}
+}
+
+
+@media screen and (max-width: 592px){
+	footer{
+		.information{
+			flex-direction: column;
+			align-items:center;
+			ul:last-child{
+				margin-left:34px;
+			}
+		}
+		.social-btns{
+			height: auto !important;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

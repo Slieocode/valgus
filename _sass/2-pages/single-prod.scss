@@ -1,0 +1,266 @@
+.single-product{
+	margin-bottom:0;
+	padding-bottom:0;	
+ 	h2 {
+	 	i{
+		    font-size: .75em;
+		    margin: 0 10px 0 10px;
+		    color: $accent;
+		    font-weight: bold;
+		}
+ 	}
+ 	.prod-sec{
+ 		display:flex;
+ 		.product-media{
+ 			position: relative;
+ 			flex-basis: 100%;
+		    padding-right: 4%;
+ 			img{
+ 				width:100%;
+ 				height: 100%
+ 			}
+ 			
+			.price{
+				position: absolute;
+				top:0;
+				left:1px;
+				padding:10px;
+				color:#FFF;
+				background:#000;
+				font-weight: bold;
+				font-size:1.6em;
+			}
+
+
+ 		}
+
+ 		.product-text{
+		    flex-basis: 71%;
+		    p{
+		    	color:#888;
+		    	font-size:1.1em;
+		    	line-height: 1.8;
+		    	text-align: justify;
+		    } 			
+ 		}
+ 		.btn-action{
+ 			button{
+ 				width:232px;
+				i{transform: translateY(3px); transition: .4s;}
+ 				transition:.3s;
+
+ 			}
+ 			button:last-child{
+ 				background:$accent;
+ 				&:hover{
+ 					transform:scale(1.05);
+ 				}
+ 				&:hover i{
+ 					transform:translate(25px, 3px);
+ 				}
+ 			}
+ 		}
+ 	}
+	
+	.product-details-1{
+		display: flex;
+		flex-direction: column;
+		margin-top:5%;
+		position: relative;
+		height: 900px;
+		.btn-prod{
+			margin-bottom:3%;
+			display: flex;
+			// justify-content: center;
+			button{
+				width:195px;
+				background:#FFF;
+				color:#000;
+				font-size: 1.2em;
+				font-weight: bold;
+				box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+				padding:20px;
+				border:none;
+				cursor: pointer;
+				transition: .3s;
+				outline:none;
+				i{
+					transform: translateY(3px);
+				    font-size:1.2em
+				 }
+				&:hover{
+					transform:scale(1.08);
+				}
+				&:active{
+					transform: scale(.9);
+				}
+			}
+			button.active{
+				background: #000;
+				color:#FFF;
+				position: relative;
+				// z-index: ;
+				&:after{
+				    content: "";
+				    width: 14px;
+				    left: 50%;
+				    height: 35px;
+				    background: #000000;
+				    display: block;
+				    top: 100%;
+				    position: absolute;
+				    z-index: -9991;
+				    transform: translateX(-50%);
+				    transition: 0.3s;		
+				}
+				&:hover{
+					transform:none;
+				}
+			}
+			button:not(:first-child){
+				margin-left:30px
+			}
+		}
+
+		.details-prod{
+			transition:.3s;
+			box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+			padding:20px;			
+			border-radius: 10px;
+			position: absolute;
+			height: 84%;
+
+			top:10.8%;
+			opacity: 0;
+			p{
+				color:$textc;
+				font-size:1.1em
+			}
+			ul{
+				padding:15px;
+				margin:15px;
+				list-style: disc;
+				li{
+					font-size:1.2em;
+				}
+			}    
+		}
+		.details-prod.details-1{
+			// z-index: 99999;
+			opacity: 1;
+		}
+	
+	}
+} 
+
+.prod-suggestions{
+	margin-bottom:0;
+	margin-top:0;
+	padding-top:0;
+	padding-bottom:0;
+	h1{
+		text-align: center;
+	}
+
+	.prod:first-child{
+		&:after{
+		    content: "";
+		    position: absolute;
+		    top: -21%;
+		    right: -37%;
+		    z-index: -1;
+		    background: url('../img/visuals/2x/abs-3.png');
+		    background-size: 100% 100%;
+		    width: 350px;
+		    height: 350px;		
+    	}
+	}
+	.prod:last-child{
+		&:after{
+		    content: "";
+		    position: absolute;
+		    top: -21%;
+		    right: -37%;
+		    z-index: -1;
+		    background: url('../img/visuals/2x/abs-5.png');
+		    background-size: 100% 100%;
+		    width: 350px;
+		    height: 350px;		
+    	}
+	}
+}
+
+
+/* Responsive  */
+
+
+
+@media screen and (max-width: 890px){
+	.single-product{
+		.prod-sec{
+			flex-direction: column;
+		}
+		.details-prod{
+			height:auto !important;
+		}
+	}
+}
+
+@media screen and (max-width: 660px){
+	.single-product{
+		.prod-suggestions{
+			margin-top:20% !important;
+		}
+	}
+}
+
+@media screen and (max-width: 608px){
+		.prod-suggestions{
+			margin-top:35% !important;
+		}
+}
+
+@media screen and (max-width: 514px){
+		.prod-suggestions{
+			margin-top:45% !important;
+		}
+		.single{
+			.prod{
+				width:86% !important;
+				transform:scale(.75) !important;
+			}
+		}
+}
+
+@media screen and (max-width: 480px){
+		.prod-suggestions{
+			margin-top:120% !important;
+		}
+}
+
+
+@media screen and (max-width: 518px){
+	.single-product .btn-prod button.active:after{
+		height: 15px !important
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

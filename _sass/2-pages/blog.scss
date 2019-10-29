@@ -114,3 +114,14 @@ article{
 		}
 	}
 }
+
+@media screen and (max-width: 840px){
+	.articles-header{
+		margin:0 !important;
+		padding:0 !important;
+	}
+}
+
+.codrops-header h1{
+	flex-basis: 100% !important
+}

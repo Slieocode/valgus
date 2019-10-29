@@ -1,0 +1,318 @@
+header.store{
+	background:url('../img/main/sportx.jpg');
+	background-size:cover;
+    .textStore{
+    	position: absolute;
+    	width:100%;
+    	height: 400px;
+    	h1 {
+		    font-weight: bold;
+		    color: #fff;
+		    background: #000;
+		    font-size: 2.1em;
+		    text-transform: uppercase;
+		    padding: 0.4em 1em;
+		    position: absolute;
+		    top: 40%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+
+		.rev-block {
+		     position: absolute;
+		}
+
+		.rev-block span {
+		     opacity: 0;
+		     animation: appear-text 0.0001s linear forwards;
+		     animation-delay: 1.4s;
+		     word-spacing: 13px;
+		}
+
+		.rev-block:after {
+		     content: '';
+		     top: 0;
+		     left: 0;
+		     position: absolute;
+		     width: 0%;
+		     height: 100%;
+		     background: #FFF;
+		     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+		     animation-delay: 1s;
+		}
+
+		@keyframes rev-block {
+
+		     0% {
+		          left: 0;
+		          width: 0%;
+		     }
+		     50% {
+		          left: 0;
+		          width: 100%;
+		     }
+		     100% {
+		          left: 100%;
+		          width: 0%;
+		     }
+
+		}
+
+		@keyframes appear-text {
+
+		     0% {
+		          opacity: 0;
+		     }
+		     100% {
+		          opacity: 1;
+		     }
+
+		}
+
+		#onemore {
+		    top: 55%;
+		    left: 50%;
+		}
+
+		#onemore span {
+		     animation-delay: 2s;
+		}
+
+		#onemore.rev-block:after {
+		     background: $accent;
+		     animation-delay: 1.4s;
+		}
+
+		@media only screen and (max-width: 900px) {
+		     h1 {
+		          font-size: 20px;
+		          padding: 0.4em;
+		     }
+		}
+
+     .btn-cta{
+     	    transition: .3s;
+		    width: 300px;
+		    margin: 0 auto;
+		    margin-top: 5%;
+		    padding: 20px;
+		    font-size: 1.4em;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		    position: absolute;
+		    background: #FFF;
+		    outline: none;
+		    opacity: 0;
+	        animation: appear-text 0.0001s linear forwards;
+	        animation-delay: 2s;
+		    border: none;
+		    cursor: pointer;
+		    color: #FFF;
+		    line-height: 1.5;
+		    left: 50%;
+		    top: 50%;
+		    transform: translate(-50%, 50%);
+		    &:hover{
+		    	background:#000 !important;
+		    	color:#FFF !important;
+		    }
+    	 }
+    	.btn-cta.rev-block{
+		     background: #FFF;
+		     color:#000;
+		     animation-delay: 1s;
+    	}	 
+    }
+}
+
+.all-products{
+	// background:url('../img/visuals/waves.png');
+	// background-size: cover;
+	h1{
+		text-align: center;
+		margin-bottom: 15%
+	}
+	.row{
+		justify-content: space-around !important;
+	}
+	.prod{
+		margin-top: 50px;
+		flex-basis:20% !important;
+		width:30% !important;
+		position: relative;
+		// height: 550px;
+		&:after{
+		    content: "";
+		    position: absolute;
+		    top: -21%;
+		    right: -37%;
+		    z-index: -1;
+		    background: url('../img/visuals/2x/abs-2.png');
+		    background-size: 100% 100%;
+		    width: 350px;
+		    height: 350px;
+		}
+		.price{
+			position: absolute;
+			top:0;
+			left:0;
+			display: block;
+			width:100px;
+			text-align: center;
+			color:#FFF;
+			font-weight: bold;
+			border-top-right-radius:20px; 
+			height: 30px;
+			font-size:1.1em;
+			background:red;
+		}		
+      .btn-action{
+        display:flex;
+		button{
+			display: block !important;
+			padding: 18px
+		}
+        button:last-child{
+        	width:135px;
+        }
+      }
+	
+	}
+	.row:nth-child(3){
+		.prod{
+			&:after{
+		    content: "";
+		    position: absolute;
+		    top: -21%;
+		    right: -37%;
+		    z-index: -1;
+		    background: url('../img/visuals/2x/abs-5.png');
+		    background-size: 100% 100%;
+		    width: 350px;
+		    height: 350px;		
+	    	}
+		}
+	}
+
+	.row:nth-child(4){
+		.prod{
+			&:after{
+		    content: "";
+		    position: absolute;
+		    top: -21%;
+		    right: -37%;
+		    z-index: -1;
+		    background: url('../img/visuals/2x/abs-4.png');
+		    background-size: 100% 100%;
+		    width: 350px;
+		    height: 350px;		
+	    	}
+		}
+	}
+	.row:nth-child(5){
+		.prod{
+			&:after{
+		    content: "";
+		    position: absolute;
+		    top: -21%;
+		    right: -37%;
+		    z-index: -1;
+		    background: url('../img/visuals/2x/abs-3.png');
+		    background-size: 100% 100%;
+		    width: 350px;
+		    height: 350px;		
+	    	}
+		}
+	}	
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px){
+	header.store .textStore .rev-block:first-child{
+	    top: 29%;
+	}
+
+}
+
+@media screen and (max-width: 892px){
+	header.store .textStore .rev-block:first-child{
+	    top: 33%;
+	    left: 50%;
+	}
+	header.store .textStore .rev-block:last-child{
+	    top: 51%;
+	    left: 50%;
+	}
+	header.store{
+		.btn-cta{width: 213px !important;top:55%}
+	}
+}
+
+
+@media screen and (max-width: 450px){
+	header.store .textStore .rev-block:first-child{
+	    top: 26%;
+	    left: 50%;
+	    font-size:1.1em !important;
+	}
+	header.store .textStore #onemore{
+		top: 47% !important;
+	    left: 49% !important;
+	    font-size: 1.1em !important;
+   	}
+
+}
+
+@media screen and (max-width: 1100px){
+	.all-products{
+		.row{
+			flex-direction: column !important;
+			align-items: center;
+		}
+		.prod{
+			width:40% !important;
+			margin-bottom: 80px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.all-products{
+		.prod{
+			width:70% !important;
+		}
+	}
+}
+
+@media screen and (max-width: 500px){
+	.all-products{
+		.prod{
+			width:92% !important;
+			.btn-action{
+				flex-direction:column;
+				button{width:200px !important;}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
