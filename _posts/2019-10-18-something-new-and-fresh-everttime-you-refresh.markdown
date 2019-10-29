@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Something new and fresh everttime you refresh '
+title: 'Something new and fresh evertime you refresh '
 categories: foot
 author: ibrahim
 date: 2019-10-18T11:51:43.380Z
