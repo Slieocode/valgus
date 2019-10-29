@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Orthotics reduce the knee pain
+title: How Orthotics  Manges to reduce knee pains
 categories: toddlers
 author: ibrahim
 date: 2019-10-29T23:16:58.462Z
