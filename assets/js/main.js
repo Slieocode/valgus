@@ -167,6 +167,8 @@ $(document).ready(function(){
 	swipeAnimateClick();
 	/*Nav Menu*/
 	function navMenu(){
+	sal()
+
 	/*blog post nav */
 	if($(".blog-text-holder").length){
 		$('nav').css('background',"white")
