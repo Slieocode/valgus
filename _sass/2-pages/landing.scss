@@ -79,7 +79,10 @@ header{
 }
 
 .video-header{
-		.wrapper{
+	#headerText{
+		fill:#FFF;
+	}
+	.wrapper{
 	  width: 100%;
 	  height: 100vh;
 	  	  &:before{
