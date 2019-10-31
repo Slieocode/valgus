@@ -1,3 +1,4 @@
+
 header{
 	.offer{
 		display: flex;
@@ -87,6 +88,27 @@ header{
 		}
 	}
 }
+
+.video-header{
+	nav{
+		z-index: 9999;
+	    position: relative;
+	    height: 86px;
+	    line-height: 85px;
+	    position: absolute !important;
+	    width: 100% !important;
+	    top: 1.5%;
+		a {
+			color:#FFF !important;
+		}
+	}
+
+	main{
+		top:21%;
+	}
+}
+
+
 
 .features{
 	.feature{
