@@ -188,7 +188,6 @@ $(document).ready(function(){
 		$('nav').css('z-index','9')
 		$('nav .ul-nav > li a').css('color','#FFF')
 		$('#headerText').css('fill','#FFF')
-		$('.cl-effect-12 .ul-nav a.linq::before, .cl-effect-12 .ul-nav a.linq::after').css('border','2px solid #FFF')
 		$('.offer').css({
 			zIndex:99,
 			position:"relative"
