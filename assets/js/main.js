@@ -114,7 +114,7 @@ $(document).ready(function(){
 	/*Header*/	
 	/*Typing Effect*/
 	function typingStart(){
-		let span = $(".typing .landingH1 span");
+		let span = $(".txyping .landingH1 span");
 		if(span.length){
 			var typed = new Typed(".typing .landingH1 span", {
 			  strings: ["Feet", "Knee", " lower back", "legs"],
@@ -167,8 +167,33 @@ $(document).ready(function(){
 	swipeAnimateClick();
 	/*Nav Menu*/
 	function navMenu(){
+	// home page effects
+	//hero 
+	 let tl3 = new TimelineMax({repeat:-1});
+	 tl3.
+	  to('.landingH1 .underline:nth-child(1)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	  .to('.landingH1 .underline:nth-child(1)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+	  .to('.landingH1 .underline:nth-child(2)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	  .to('.landingH1 .underline:nth-child(2)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+	  .to('.landingH1 .underline:nth-child(3)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	  .to('.landingH1 .underline:nth-child(3)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+	  .to('.landingH1 .underline:nth-child(4)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	  .to('.landingH1 .underline:nth-child(4)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+
 	sal()
 
+	/*home page style*/
+	 if($(".typing").length){
+
+		$('nav').css('z-index','9')
+		$('nav .ul-nav > li a').css('color','#FFF')
+		$('#headerText').css('fill','#FFF')
+		$('.cl-effect-12 .ul-nav a.linq::before, .cl-effect-12 .ul-nav a.linq::after').css('border','2px solid #FFF')
+		$('.offer').css({
+			zIndex:99,
+			position:"relative"
+		})
+	 }
 	/*blog post nav */
 	if($(".blog-text-holder").length){
 		$('nav').css('background',"white")

@@ -1,4 +1,4 @@
- .im-menu{
+.im-menu{
     position: absolute;
     color: #FFF;
     left: 20px;
@@ -55,8 +55,6 @@ nav{
       margin-left: 30%;   
      > li{
         position: relative;
-        flex-basis: 8%;
-        justify-content: center;  
         display: flex;
          a{
            color:#000;
