@@ -1,13 +1,13 @@
 .main-h{
-.cl-effect-12 .ul-nav a.linq::before, .cl-effect-12 .ul-nav a.linq::after{
-	border:2px solid #FFF;
-}
-	
+	.cl-effect-12 .ul-nav a.linq::before, .cl-effect-12 .ul-nav a.linq::after{
+		border:2px solid #FFF;
+	}	
+
 }
 header{
-	position: relative;
-	background:url('https://images.unsplash.com/photo-1456613820599-bfe244172af5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80');
+	background:url('../img/main/sportx.jpg');
 	background-size:cover;
+	position: relative;
 	.wrapper{
 	  width: 100%;
 	  height: 90vh;
@@ -56,15 +56,6 @@ header{
 				margin-left:15px;
 			}
 		}
-		button{
-			margin:0;
-		    margin-left: 9% !important;
-		    border: none;
-		    padding: 25px;
-		    background: #FFF;
-		    background: rgb(28,27,27);
-		    background: linear-gradient(90deg, rgba(28,27,27,1) -9%, rgba(69,158,247,1) 84%);	
-		}
 		p{
 			color:$textc;
 			font-size:1.2em;
@@ -72,43 +63,6 @@ header{
 		}
 	}
 
-		button{
-			transition: .3s;
-			width:300px;
-			margin:0 auto;
-			padding:15px;
-			font-size:1.4em;
-			font-weight:700;
-			text-transform: uppercase;
-			background:$cta;
-			outline:none;
-			border:3px solid #FFF;
-			// border-radius:24% 76% 22% 78% / 100% 0% 100% 0%  ;
-			cursor:pointer;
-			color:#FFF;
-			i{
-				font-size:1.1em;
-				animation:tilt 3s ease infinite ;
-			}
-			&:hover{
-			  transform:scale(1.05);
-		    background: linear-gradient(90deg, rgba(28,27,27,1) -9%, rgba(69,158,247,1) 84%) !important;	
-
-			}
-
-			@keyframes tilt{
-				0%{
-					transform:scale(1)
-				}
-
-				50%{
-					transform:scale(1.3)
-				}
-				100%{
-					transform:scale(1)
-				}
-			}
-		}
 		.typing{
 			h1{
 				text-align: center;
@@ -119,18 +73,24 @@ header{
 	}
 
 }
-.main-h{
-	 &:after{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 1;
- }
 
+.main-h{
+	.textStore h1:first-child{
+		top:25% !important;
+	}
+	.textStore{
+		button{
+			margin:0;
+		    margin-left: 9% !important;
+		    margin-top:7% !important;
+		    border: none;
+		    padding: 25px;
+		    background: rgb(28,27,27) !important;
+		    background: linear-gradient(90deg, rgba(28,27,27,1) -9%, rgba(69,158,247,1) 84%) !important;	
+			left:42% !important;
+		}
+
+	}
 }
 .features{
 	.row{
@@ -149,6 +109,10 @@ header{
 				width:100%;
 				height:100%;
 			}
+		}
+		.mediaImg:last-child{
+			flex-basis: 62% !important;
+
 		}
 	}
 	.f-2{
@@ -370,6 +334,9 @@ header{
 }
 
 
+
+
+	
 
 
 	

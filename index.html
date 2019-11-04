@@ -2,19 +2,28 @@
 layout: default
 ---
 
-<header class="main-h">
+<header class="main-h store">
 	{% include navbar.html %}	
 	<div class="wrapper">
 		<main>
-			<div class="text-holder">
+			<div class="textStore">
 			 	<div class="typing">   
-			 		<h1 class="landingH1">What Your 
+<!-- 			 		<h1 class="landingH1">What Your 
 			 		 <span class="underline">Feet Needs</span>
 			 		 <span class="underline">Knee Needs</span>
 			 		 <span class="underline">Ankle Needs</span>
 			 		 <span class="underline">Lower Back Needs</span>
 			 		  </h1>
-			 	</div>
+
+ -->			 
+			     <h1 class="rev-block">
+			          <span>Decipher your discomfort</span>
+			     </h1>
+			     <h1 class="rev-block" id="onemore">
+			          <span>The world's first online pre made tailor made orthotic store</span>
+			     </h1>
+
+ 	</div>
 		 		<button class="btn-cta"><a style="color:#FFF" href="/store">Shop Now!</a> &nbsp;&nbsp; <i class="im im-shopping-cart"></i></button>	
 			</div>
 		 </main>
@@ -34,12 +43,15 @@ layout: default
   data-sal-easing="ease-out"
 
 			 class="row mediaTxt">
-				 <h1 class="f-headings">human engineering</h1>
-				 <p class="f-para" >Orthotics are designed to provide comfort whilst controlling your foot in a sound
-					biomechanical position improving alignment, balance and control in the process.</p>
-				 <p class="f-para" >Everyday external and internal forces/factors + an unwarrented genetic pre disposition of
-					the bodies structure = compromised biomechanical engineering of your legs and feet which
-					can cause specific conditions, pain and dysfunction.</p>
+				 <h1 class="f-headings">Human Engineering</h1>
+				 <p class="f-para" >
+				Everyday Internal + External forces can change the function of our bodies genetic engineering structure. This can compromise the biomechanical engineering of your legs and feet which can cause specific conditions, pain and dysfunction throughout your body.
+
+
+				 <p class="f-para" >
+				 	Orthotics are designed to provide comfort whilst controlling your foot in a sound biomechanical position improving alignment, balance and control in the process.
+
+				 </p>
 					<button class="btn-cta"> <a style="color:#FFF" href="/products">Check Our Products&nbsp;&nbsp;<i class="im im-arrow-right"></i></a></button>
 			</div>
 			<div
@@ -49,7 +61,7 @@ layout: default
   data-sal-easing="ease-out"
 
 			 class="row mediaImg">
-				<img src="/assets/img/products/orthotic-shoes.jpeg" alt="orthotic-shoes">
+				<img src="/assets/img/main/illustrate.png" alt="orthotic-shoes">
 			</div>			
 		</div>
 		<!-- Two -->
@@ -69,22 +81,37 @@ layout: default
   data-sal-easing="ease-out"
 
 			class="row mediaTxt">
-				 <h1 class="f-headings">21 Questions?</h1>
+				 <h1 class="f-headings">Decipher your discomfort</h1>
 				 <p class="f-para" >Hampton et al communicated that 83% of medical diagnoses were determined just through taking the history of patients without taking a physical examination.</p>
 
 				 <p class="f-para" >This is huge! That’s why through our carefully crafted podiatric biomechanical questionnaire we can tailor the products to your need.</p>
-
-				 <p class="f-para" >
-				 	(And the more feedback we get from you we can make the questions even more specific
-					making the product better and along with your outcome.)
-					(Picture – Picture of streetwear, business wear, sports wear)</p>
-
-					<button class="btn-cta">Take Our Questionnaire&nbsp;&nbsp;<i class="im im-arrow-right"></i></button>
+					<button style="width: 360px" class="btn-cta">Take Our Questionnaire&nbsp;&nbsp;<i class="im im-arrow-right"></i></button>
 			</div>
 		</div>
 	</div>
 </section>
 
+<section class="actions">
+	<div class="container">
+		<div class="questionnaire-action">
+			<div 
+
+data-sal="slide-up"
+  data-sal-duration="1000"
+  data-sal-easing="ease-out"
+			 class="mediaText">
+				<h1><span class="underline">Book</span> Your Free 1v1 Consultation</h1>
+				<p>through our carefully crafted podiatric biomechanical questionnaire we can tailor the products to  your needs (And the more feedback we get from you we can make the questions even more specific
+				making the product better and along with your outcome).</p>
+			<button class="btn-cta"><a style="color:#FFF" href="/contact">Book Consultation&nbsp;&nbsp;<i class="im im-arrow-right"></i></a></button>
+
+			</div>
+			<div class="mediaImg">
+				<img src="assets/img/main/2.jpeg" alt="2">
+			</div>
+		</div>
+	</div>
+</section>
 
 <section class="blog info">
 	 <h1 class="f-headings">Our Recent Blogs</h1>
@@ -173,6 +200,7 @@ data-sal="slide-up"
 		  </div>
 		</section>
 </section>
+
 <div class="container"><hr></div>
 <script>
   if (window.netlifyIdentity) {

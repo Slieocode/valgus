@@ -183,18 +183,21 @@ $(document).ready(function(){
 	sal()
 
 	/*home page style*/
-	 if($(".typing").length){
+	 if($(".bgStore").length){
 
 		$('nav').css('z-index','9')
+		$('.textStore').css('z-index','9')
 		$('nav .ul-nav > li a').css('color','#FFF')
 		$('#headerText').css('fill','#FFF')
 		$('.offer').css({
-			zIndex:99,
+			zIndex:9,
 			position:"relative"
-		})
+		}) 
+		
+
 	 }
 	/*blog post nav */
-	if($(".blog-text-holder").length){
+	if($(".blog-text-holder, .h-product").length){
 		$('nav').css('background',"white")
 	}
 	let mediaCheckIfMobile = window.matchMedia('(max-width: 767px)').matches;
