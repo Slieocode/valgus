@@ -41,4 +41,3 @@ collections:
       - {label: "Shipping Details", name: "paragraph1", widget: "string"}
       - {label: "Return Details", name: "paragraph2", widget: "string"}
       - {label: "Product Details", name: "body", widget: "markdown"}
-lorem
