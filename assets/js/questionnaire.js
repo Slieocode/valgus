@@ -1,7 +1,4 @@
 $(document).ready(function(){
-	if($('.questionnaire').length){
-		$('body').css({overflow:"hidden"});
-	}
 
 	let tl = new TimelineMax({pause:true});
 	function staggerEffect(){
@@ -9,7 +6,6 @@ $(document).ready(function(){
 	}
 	staggerEffect();
 	$('.start-questionnaire').on('click', function(){
-		alert("s")
 		tl
 		 .to('.welcome', .5, {opacity:"0"})
 		 .to('.welcome', .1, {css:{display:"none"}})
@@ -47,6 +43,7 @@ $(document).ready(function(){
 
 	function populateData(clickedList){
 
+
 		let grabedObj = eval(findFormatted(data, clickedList+"-op").split('["slot"]').join(''));
 		let grablist;
 		if(!grabedObj){
@@ -68,19 +65,25 @@ $(document).ready(function(){
 		$(optionsFields).empty();
 
 		let products;
-		let REGEXP = new RegExp(/massage ball|tight|gait plate|everyday|sports|theraband|therabands|heel/, "gi");
+		let REGEXP_PRODUCT = new RegExp(/massage ball|tight|gait plate|everyday|sports|theraband|therabands|heel/, "gi");
+		let REGEXP_PICTURE = new RegExp(/img|questionnaire/, "gi");
 
 		for(i = 0; i < grablist.length; i+=1){
-			// filtering options & checking if there is a product to display
-			products = grablist[i].match(REGEXP);
+			// filtering options & checking if there is a product or Image to display
+			products = grablist[i].match(REGEXP_PRODUCT);
+			pictures = grablist[i].match(REGEXP_PICTURE);
+
 			// displaying & forming the products for the user to buy
 			if(products && products.length){
-
-				console.log(grablist[i])
+				$(optionsFields).append($("<li class='option'>"+ grablist[i] +"</li>")); 		
 			
+			}else if(pictures && pictures.length){ // detecting Images Paths
+			   $(optionsFields).append($("<li class='option'>"+ "<img src='" + grablist[i] +"' />" +"</li>")); 				
+			}else{
+				// appending options each time
+				$(optionsFields).append($("<li class='option'>"+ grablist[i] +"</li>")); 		
 			}
-			// appending options each time
-			$(optionsFields).append($("<li class='option'>"+ grablist[i] +"</li>")); 
+
 
 		}
 		staggerEffect();
@@ -88,6 +91,10 @@ $(document).ready(function(){
 
 	$(document).on('click',".option",   function(){
 		currentlyClicked = $(this).text();
+		if(!currentlyClicked){
+			currentlyClicked = $(this).find('img').attr('src');
+			console.log(currentlyClicked)
+		}
 
 		populateData(currentlyClicked);
 		console

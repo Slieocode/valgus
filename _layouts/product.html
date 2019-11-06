@@ -1,47 +1,136 @@
 ---
 layout: default
 ---
-<header class="header-blog" style="background:url('{{site.url}}/{{page.featImg}}')">
+<header  class="h-product">
 	<div class="about-nav">
 		{% include navbar.html %}		
 	</div>
-	<div class="blog-overlay">
-		<div class="overlay"></div>		
-	</div>
 </header>
-<section class="blog-content">
-	<div class="container">
-		<article class="blog-text-holder">
-			<div class="author-avatar">
-				<img src="{{ site.url }}{{ site.data.authors[page.author].avatar }}" alt="{{site.data.authors[page.author].name}}">
-				<p><i class="fas fa-pen-alt"></i> Written By <span class="underline">{{site.data.authors[page.author].name}}</span> </p>
-				<p><i class="fas fa-file-alt"></i> On: <span class="underline">{{page.date | date:"%B %e, %Y"}}</span> </p>
-			</div>
-			<hr>
-			<h1>{{ page.title }}</h1>
-			<hr>
-			{{ content }}
-		</article>
-	</div>
-</section>
 
+<section class="single-product">
 	<div class="container">
-		<div class="all-articles-holder">
-			<h1 style="text-align: center;">You Might Want to read</h1>
-			<section class="card-holder readMore">
-				{% for post in site.posts limit:3 %}
-					<a href="{{post.url}}" class="card-link">
-						<div class="card">
-						  <div class="card-img-top" style='background:url("{{site.url}}/{{post.featImg}}");' alt="Blog image cap"></div>
-						  <div class="card-block">
-						    <div class="category">{{post.categories}}</div>
-						    <h3 class="card-title">{{post.title}}</h3>
-						  </div>
-						</div>
-					</a>
-				{% endfor %}
-			</section>
+		<h2> {{page.categories}} <i class="im im-angle-right"></i> {{page.title}}</h2> 
+		<hr>
+	<div class="prod-sec">
+		<div class="product-media">
+			<img src="{{page.prodImg}}" alt="foot-orthotics">
+			<span class="price"> {{page.price}} </span>
+		</div>
+		<div class="product-text">
+			<h1>{{page.title}}</h1>
+			<hr>
+				<p>
+					{{page.paragraph}}
+				</p>
+				<div class="btn-action" style="display: flex">
+			 	<button style="width:100%" class="btn-cta snipcart-add-item"
+							    data-item-id="{{page.id}}"
+							    data-item-price="{{page.price}}"
+							    data-item-url="/store"
+							    data-item-description="{{page.paragraph}}"
+							    data-item-image="{{page.prodImg}}"
+							    data-item-name="{{page.title}}"
+
+			 	>Add to cart&nbsp;&nbsp;<i class="im im-shopping-cart"></i></button>
+				</div>
 		</div>
 	</div>
+	<div class="product-details-1">
+		<div class="btn-prod">
+			<button data-role="details-1" class="active" >Details &nbsp;&nbsp;<i class="im im-data-validate"></i></button>
+			<button  data-role="details-2">Shipping &nbsp;&nbsp;<i class="im im-rocket"></i></button>
+			<button  data-role="details-3">Returns &nbsp;&nbsp;<i class="im im-undo"></i></button>
+		</div>
+		<div class="details-prod details-1">
+				{{content}}
+		</div>
+		<div class="details-prod details-2">
+			<p> {{page.paragraph1}} </p>
+		</div>
+		<div class="details-prod details-3">
+			<p> {{page.paragraph2}} </p>
+		</div>
+	</div>
+	</div>
+</section>
+<section class="prod-suggestions single  all-products">
+		<div class="container">
+			<h1>Other products we recommend to use in conjunction with orthotics!</h1>
+		</div>
+		<div class="container">
+		<div class="row second">
+			<div class="prod">
+				<div class="media">
+					<img src="/assets/img/products/heel-lift.jpg" alt="heel-lift">
+				</div>
+				<div class="textMedia">
+					<h1>Heel Lifts</h1>
+ 					<span class="price">$11.99</span>
+					<div class="btn-action">
+					 	<button class="btn-cta"><a style="color:#FFF" href="/product">See&nbsp;&nbsp; More</a></button>
+											 	<button class="snipcart-add-item btn-cta bubbly-button"
+							    data-item-id="heel-lifts"
+							    data-item-price="79.99"
+							    data-item-url="/store"
+							    data-item-description="High-quality Orthotics Heel Lifts."
+							    data-item-image="/assets/img/products/heel-lift.jpg"
+							    data-item-name="Heel Lifts"
+					 	><i class="im im-plus"></i>&nbsp;&nbsp;<i class="im im-shopping-cart"></i></button>
+
+					</div>
+				</div>
+			</div>			
+			<div class="prod">
+				<div class="media">
+					<img src="/assets/img/products/foot-orthotics-1.jpg" alt="therabands-for-weak-glutes">
+				</div>
+				<div class="textMedia">
+					<h1>Footwear Orthotics</h1>
+ 					<span class="price">$47</span>
+					<div class="btn-action">
+					 	<button class="btn-cta"><a style="color:#FFF" href="/product">See&nbsp;&nbsp; More</a></button>
+											 	<button class="snipcart-add-item btn-cta bubbly-button"
+							    data-item-id="heel-lifts"
+							    data-item-price="79.99"
+							    data-item-url="/store"
+							    data-item-description="High-quality Orthotics Heel Lifts."
+							    data-item-image="/assets/img/products/heel-lift.jpg"
+							    data-item-name="Heel Lifts"
+					 	><i class="im im-plus"></i>&nbsp;&nbsp;<i class="im im-shopping-cart"></i></button>
+
+					</div>
+				</div>
+			</div>
+			</div>	
+		</div>
+</section>
+
+<section class="actions">
+	<div class="container">
+		<div class="questionnaire-action">
+			<div class="mediaImg">
+				<img src="assets/img/main/1.jpeg" alt="1">
+			</div>
+			<div 
+
+data-sal="slide-up"
+  data-sal-duration="1000"
+  data-sal-easing="ease-in"
+
+			class="mediaText">
+				<h1>Not Sure? Take Our <span class="underline">Questionaire</span></h1>
+				<p>through our carefully crafted podiatric biomechanical questionnaire we can tailor the products to  your needs (And the more feedback we get from you we can make the questions even more specific
+				making the product better and along with your outcome).</p>
+					<button class="btn-cta">Take Questionaire&nbsp;&nbsp;<i class="im im-arrow-right"></i></button>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="container"><hr></div>
+<div hidden id="snipcart"
+	 data-api-key="ZjQ0OGY4ODMtNWY0Mi00MWU1LTk5OTUtYmU4YTJmNGNlZDZmNjM3MDYxNTk5ODE2MDI5OTQw">
+ 	
+</div>
+{% include cartButton.html %}
 
 {% include footer.html %}

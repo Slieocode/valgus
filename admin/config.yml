@@ -23,3 +23,21 @@ collections:
       - {label: "Comments", name: "comments", widget: "boolean", default: true}      
       - {label: "Featured Image", name: "featImg", widget: "image", default: '/uploads'}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "product" # Used in routes, e.g., /admin/collections/blog
+    label: "product" # Used in the UI
+    folder: "_products" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: markdown
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "product"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Price", name: "price", widget: "string"}
+      - {label: "Product ID (unique id)", name: "id", widget: "string"}
+      - {label: "Category (must be lowercase And use dashes between Words e.g: business-marketing)", name: "categories", widget: "string"}
+      - {label: "Product Image", name: "prodImg", widget: "image", default: '/uploads'}
+      - {label: "Product Description", name: "paragraph", widget: "string"}
+      - {label: "Shipping Details", name: "paragraph1", widget: "string"}
+      - {label: "Return Details", name: "paragraph2", widget: "string"}
+      - {label: "Product Details", name: "body", widget: "markdown"}

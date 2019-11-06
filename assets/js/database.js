@@ -107,11 +107,11 @@ const data = {
   			"1": {
 			   	 "ankle":"op", //x
 			   	 "heel":"op", //x
-			   	 "arch":"op",//x
+			   	 "assets/img/questionnaire/foot/arch-pain.png":"op",//x
+			   	 "assets/img/questionnaire/foot/plantar-fascitis.png":"op",//x
 			   	 "mid foot":"op", //x 
 			   	 "fore foot":"op", //x
 			   	 "big toe":"op", //x
-			   	 "base of heel":"op", //x
 			   	 "posterior heel":"op",//x
 			   	 "medial ankle":"op", //x
 			   	 "medial arch and mid foot":"op", //x
@@ -120,6 +120,19 @@ const data = {
 			   	 "lesser digits":"op",//x
 			   	 "slot":"Foot Issues-op"
 			   },
+		   "6":{
+			   "stability work":"op", 
+		 	   "Everyday or sports Orthotic + 4 degree valgus post":"op", 
+			   "Massage ball for adductor hallicus and quadratus plantae release":"op", 			    
+		 	   "Everyday or sports Orthotic":"op", 
+		 	   "Theraband for rehabing STJ for mobility":"op", 
+			   "Massage ball to strengthen tib post":"op", 
+			   "Massage ball":"op", 
+			   "heel lift":"op", 
+		 	   "Theraband for weak glutes":"op", 
+		 	   "Theraband for stretching calf":"op", 
+			   "slot":["medial arch and mid foot-op", "assets/img/questionnaire/foot/arch-pain.png-op"],
+			},
 			"2":{
 			   "Massage ball for calf trigger point":"op", 
 			   "Massage ball for tib post release":"op", 
@@ -136,8 +149,9 @@ const data = {
 			   "Massage ball to strengthen tib post":"op", 
 			   "Massage ball for adductor hallicus":"op", 
 		 	   "Theraband for weak glutes":"op", 
+
 		 	   "Theraband for stretching calf":"op",
-			   "slot":["heel-op", "base of heel-op"],
+			   "slot":["heel-op", "assets/img/questionnaire/foot/plantar-fascitis.png-op"],
 			},
 			"4":{
 		 	   "Theraband for foot circular movements":"op", 
@@ -157,19 +171,6 @@ const data = {
 		 	   "Theraband for weak glutes":"op", 
 		 	   "Theraband for stretching calf":"op", 
 			   "slot":["posterior heel-op"],
-			},
-		   "6":{
-			   "stability work":"op", 
-		 	   "Everyday or sports Orthotic + 4 degree valgus post":"op", 
-			   "Massage ball for adductor hallicus and quadratus plantae release":"op", 			    
-		 	   "Everyday or sports Orthotic":"op", 
-		 	   "Theraband for rehabing STJ for mobility":"op", 
-			   "Massage ball to strengthen tib post":"op", 
-			   "Massage ball":"op", 
-			   "heel lift":"op", 
-		 	   "Theraband for weak glutes":"op", 
-		 	   "Theraband for stretching calf":"op", 
-			   "slot":["medial arch and mid foot-op", "arch-op"],
 			},
 			"7":{
 			   "stability work":"op", 
