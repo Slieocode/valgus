@@ -22,6 +22,11 @@ layout: default
 <section class="all-products">
 	<div class="container">
 			<h1>Shop by condition!</h1>
+
+			{% for product in site.categories %}	
+				<h1>here is : {{product.title}}</h1>			
+	
+			{% endfor %}
 		<div 
 data-sal="slide-up"
   data-sal-duration="1000"
@@ -36,7 +41,7 @@ data-sal="slide-up"
 					<span class="price">$99</span>
 					<div class="btn-action">
 					 	<button class="btn-cta"><a style="color:#FFF" href="/product">See&nbsp;&nbsp; More</a></button>
-											 	<button class="snipcart-add-item btn-cta bubbly-button"
+						<button class="snipcart-add-item btn-cta bubbly-button"
 							    data-item-id="heel-lifts"
 							    data-item-price="79.99"
 							    data-item-url="/store"
