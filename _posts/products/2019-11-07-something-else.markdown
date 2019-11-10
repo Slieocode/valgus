@@ -2,8 +2,9 @@
 layout: product
 title: SOMETHING ELSE
 price: '79'
-id: this is-prodcut
-categories: hip
+idx: prodId7
+categories: product
+tag: hip
 prodImg: /assets/blogs/img/uploads/children-orthotics.jpg
 paragraph: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quo,

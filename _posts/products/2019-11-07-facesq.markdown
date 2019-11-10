@@ -1,10 +1,10 @@
 ---
 layout: product
-title: facex
+title: SOMETHING ELSE
 price: '79'
-idx: uniqued
+idx: prodId7
 categories: product
-prodImg: /assets/blogs/img/uploads/knee-orthotics.jpeg
+prodImg: /assets/blogs/img/uploads/children-orthotics.jpg
 paragraph: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quo,
   magni facere quibusdam consectetur nisi alias repellat voluptatibus, inventore

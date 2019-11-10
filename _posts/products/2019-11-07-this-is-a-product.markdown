@@ -2,8 +2,8 @@
 layout: product
 title: this is a product
 price: '48'
-id: this is-prodcut
-categories: hip
+idx: unique8x
+categories: product
 prodImg: /assets/blogs/img/uploads/massage-ball.jpeg
 paragraph: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quo,
