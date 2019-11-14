@@ -42,7 +42,7 @@ const data = {
 			   "Massage ball to tight Quads, ITB":"op", 
 		 	   "Theraband for weak glutes":"op", 
 		 	   "Theraband for rehabing STJ for mobility":"op",
-			   "slot":["lateral/outside-op"],		   	
+			   "slot":["lateroutside-op"],		   	
 		   },
 		   "4":{
 		   	   "Everyday or sports orthotic":"op", //example lateral knee
@@ -105,21 +105,23 @@ const data = {
 
   "Foot Issues":{
   			"1": {
-			   	 "ankle":"op", //x
-			   	 "heel":"op", //x
 			   	 "assets/img/questionnaire/foot/arch-pain.png":"op",//x
 			   	 "assets/img/questionnaire/foot/plantar-fascitis.png":"op",//x
-			   	 "mid foot":"op", //x 
-			   	 "fore foot":"op", //x
-			   	 "big toe":"op", //x
+			   	 "assets/img/questionnaire/foot/tailors-bunions.png":"op", //x
+			   	 "assets/img/questionnaire/foot/sesamoiditis.png":"op", //x
+			   	 "assets/img/questionnaire/foot/gout.png":"op", //x
+			   	 "assets/img/questionnaire/foot/metatarsalgia.png":"op", //x
+			   	 "assets/img/questionnaire/foot/mortons-neuroma.png":"op",
+			   	 "assets/img/questionnaire/foot/claw-toes.png":"op",
+			   	 "assets/img/questionnaire/foot/pronation.png":"op",
+			   	 "assets/img/questionnaire/foot/heel-spursx.png":"op",
 			   	 "posterior heel":"op",//x
 			   	 "medial ankle":"op", //x
 			   	 "medial arch and mid foot":"op", //x
 			   	 "lateral ankle and mid foot":"op", //X
-			   	 "true mid foot and forefoot":"op",//* 
-			   	 "lesser digits":"op",//x
 			   	 "slot":"Foot Issues-op"
-			   },
+			   }, 
+
 		   "6":{
 			   "stability work":"op", 
 		 	   "Everyday or sports Orthotic + 4 degree valgus post":"op", 
@@ -134,13 +136,13 @@ const data = {
 			   "slot":["medial arch and mid foot-op", "assets/img/questionnaire/foot/arch-pain.png-op"],
 			},
 			"2":{
-			   "Massage ball for calf trigger point":"op", 
-			   "Massage ball for tib post release":"op", 
-			   "Massage ball for adductor hallicus and quadratus plantae release":"op", 
+			    "Massage ball for calf trigger point":"op", 
+			    "Massage ball for tib post release":"op", 
+			    "Massage ball for adductor hallicus and quadratus plantae release":"op", 
 		 	 	"Theraband for weak glutes":"op", 
 		 	 	"Everyday or sports Orthotic":"op", 
 		 	 	"Theraband for rehabing STJ for mobility":"op",
-			    "slot":["ankle-op", "medial ankle-op"],
+			    "slot":["ankle-op", "assets/img/questionnaire/foot/pronation.png-op"],
 			},  				  			  				
 			"3":{
 		 	   "heel lift":"op",
@@ -151,7 +153,7 @@ const data = {
 		 	   "Theraband for weak glutes":"op", 
 
 		 	   "Theraband for stretching calf":"op",
-			   "slot":["heel-op", "assets/img/questionnaire/foot/plantar-fascitis.png-op"],
+			   "slot":["assets/img/questionnaire/foot/heel-spursx.png-op", "assets/img/questionnaire/foot/plantar-fascitis.png-op"],
 			},
 			"4":{
 		 	   "Theraband for foot circular movements":"op", 
@@ -165,12 +167,10 @@ const data = {
 			   "slot":["lateral ankle and mid foot-op", "mid foot-op"],
 			},
 		   "5":{
-		 	   "Everyday or sports Orthotic + 4 degree heel lift":"op",
-		 	   "Everyday or sports Orthotic(Cushioning at the back of heel)":"op", 		 	    
+		 	   "Everyday or sports Orthotic":"op",
 		 	   "Theraband for rehabing STJ for mobility":"op", 
 		 	   "Theraband for weak glutes":"op", 
-		 	   "Theraband for stretching calf":"op", 
-			   "slot":["posterior heel-op"],
+			   "slot":["assets/img/questionnaire/foot/sesamoiditis.png-op", "assets/img/questionnaire/foot/gout.png-op"],
 			},
 			"7":{
 			   "stability work":"op", 
@@ -178,13 +178,9 @@ const data = {
 			   "Massage ball to release fasica":"op", 
 		 	   "Theraband for stretching calf":"op", 
 		 	   "Everyday or sports Orthotic + met dome":"op", 
-		 	   "Everyday or sports Orthotic":"op", 
-		 	   "Theraband for rehabing STJ for mobility":"op", 
-		 	   "Theraband for for foot circular movements":"op", 
-			   "Massage ball to met heads":"op", 
 			   "heel lift":"op", 
 		 	   "Theraband for weak glutes":"op", 
-			   "slot":["true mid foot and forefoot-op", "fore foot-op"],
+			   "slot":["assets/img/questionnaire/foot/metatarsalgia.png-op","assets/img/questionnaire/foot/mortons-neuroma.png-op"]
 			}, 
 			"8":{
 			   "Everyday or sports orthotic with possible 1st met extentsion":"op", 
@@ -193,16 +189,13 @@ const data = {
 		 	   "Everyday or sports Orthotic":"op", 
 		 	   "Theraband for rehabing STJ for hallux mobility":"op", 
 		 	   "Theraband for weak glutes":"op", 
-			   "slot":["big toe-op"],
+			   "slot":["assets/img/questionnaire/foot/tailors-bunions.png-op"],
 			}, 
 			"9":{
 			   "Everyday or sports orthotic + 4 degree valgus post":"op", 
 			   "Massage ball to tight extensors and calf":"op", 
-			   "Massage ball for adductor hallicus":"op", 
-		 	   "Everyday or sports Orthotic":"op", 
 		 	   "Theraband for rehabing STJ for hallux mobility":"op", 
-		 	   "Theraband for weak glutes":"op", 
-			   "slot":["lesser digits-op"],
+			   "slot":["assets/img/questionnaire/foot/claw-toes.png-op"],
 			}  				  			  				
 	
 	 },

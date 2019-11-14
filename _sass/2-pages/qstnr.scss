@@ -95,13 +95,18 @@ header.vl-qs{
 // 	overflow:hidden;
 // }
 .questionnaire{
+
 	overflow:hidden;
 	position: absolute;
 	top:0;
-	height: 100%;
+	height: 150%;
 	width:100%;
 	z-index: 9999999;
 	background:#FFF;
+// background-color: #ddf8ff;
+// background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%2368aecc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%235885aa' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%2358aec8' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%235084a4' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%2347adc2' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%234a829d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2336acbb' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23468096' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2325abb2' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23447e8f' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%2316aaa8' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23437c88' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+// background-attachment: fixed;
+// background-size: cover;
 	margin:0;
 	padding:0;
 	// display: none;
@@ -130,18 +135,29 @@ header.vl-qs{
 				justify-content: center;
 			}
 			.option{
+				background:#FFF;
+				justify-content: center;
 				font-size:1.2em;
 				padding:20px;
+				width:200px;
+				height:200px;
 				margin:10px;
 				box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.12);
 				border-radius:10px;
 				cursor:pointer;
 				font-weight: bold;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
 				&:hover{
 					transition: .3s;
 					background:$accent;
 					color:#FFF;
 					transform:scale(1.05) !important;
+				}
+				img{
+					width:100%;
+					height:100%;
 				}
 			}
 			.not{

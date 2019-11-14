@@ -78,6 +78,7 @@ $(document).ready(function(){
 				$(optionsFields).append($("<li class='option'>"+ grablist[i] +"</li>")); 		
 			
 			}else if(pictures && pictures.length){ // detecting Images Paths
+				console.log('it is a fucking png')
 			   $(optionsFields).append($("<li class='option'>"+ "<img src='" + grablist[i] +"' />" +"</li>")); 				
 			}else{
 				// appending options each time
