@@ -65,7 +65,7 @@ $(document).ready(function(){
 		$(optionsFields).empty();
 
 		let products;
-		let REGEXP_PRODUCT = new RegExp(/massage ball|tight|gait plate|everyday|sports|theraband|therabands|heel/, "gi");
+		let REGEXP_PRODUCT = new RegExp(/massage ball|tight|gait plate|everyday|sports|theraband|therabands/, "gi");
 		let REGEXP_PICTURE = new RegExp(/img|questionnaire/, "gi");
 
 		for(i = 0; i < grablist.length; i+=1){
@@ -76,7 +76,7 @@ $(document).ready(function(){
 			// displaying & forming the products for the user to buy
 			if(products && products.length){
 				$(optionsFields).append($("<li class='option'>"+ grablist[i] +"</li>")); 		
-			
+
 			}else if(pictures && pictures.length){ // detecting Images Paths
 				console.log('it is a fucking png')
 			   $(optionsFields).append($("<li class='option'>"+ "<img src='" + grablist[i] +"' />" +"</li>")); 				

@@ -115,10 +115,11 @@ const data = {
 			   	 "assets/img/questionnaire/foot/claw-toes.png":"op",
 			   	 "assets/img/questionnaire/foot/pronation.png":"op",
 			   	 "assets/img/questionnaire/foot/heel-spursx.png":"op",
-			   	 "posterior heel":"op",//x
-			   	 "medial ankle":"op", //x
-			   	 "medial arch and mid foot":"op", //x
-			   	 "lateral ankle and mid foot":"op", //X
+			   	 "assets/img/questionnaire/foot/tarsal-tunnel-syndrome.png":"op",
+			   	 "assets/img/questionnaire/foot/hammer-toes.png":"op",
+			   	 "assets/img/questionnaire/foot/calluses.png":"op",
+			   	 "assets/img/questionnaire/foot/bunions.png":"op",
+			   	 "assets/img/questionnaire/foot/achilles-tendonitis.png":"op",
 			   	 "slot":"Foot Issues-op"
 			   }, 
 
@@ -133,7 +134,7 @@ const data = {
 			   "heel lift":"op", 
 		 	   "Theraband for weak glutes":"op", 
 		 	   "Theraband for stretching calf":"op", 
-			   "slot":["medial arch and mid foot-op", "assets/img/questionnaire/foot/arch-pain.png-op"],
+			   "slot":["assets/img/questionnaire/foot/tarsal-tunnel-syndrome.png-op", "assets/img/questionnaire/foot/arch-pain.png-op"],
 			},
 			"2":{
 			    "Massage ball for calf trigger point":"op", 
@@ -142,7 +143,7 @@ const data = {
 		 	 	"Theraband for weak glutes":"op", 
 		 	 	"Everyday or sports Orthotic":"op", 
 		 	 	"Theraband for rehabing STJ for mobility":"op",
-			    "slot":["ankle-op", "assets/img/questionnaire/foot/pronation.png-op"],
+			    "slot":["assets/img/questionnaire/foot/achilles-tendonitis.png-op", "assets/img/questionnaire/foot/pronation.png-op"],
 			},  				  			  				
 			"3":{
 		 	   "heel lift":"op",
@@ -164,7 +165,7 @@ const data = {
 			   "Massage ball to strengthen tib post":"op", 
 			   "Massage ball":"op", 
 		 	   "Theraband for weak glutes":"op", 
-			   "slot":["lateral ankle and mid foot-op", "mid foot-op"],
+			   "slot":["assets/img/questionnaire/foot/calluses.png-op", "mid foot-op"],
 			},
 		   "5":{
 		 	   "Everyday or sports Orthotic":"op",
@@ -189,7 +190,7 @@ const data = {
 		 	   "Everyday or sports Orthotic":"op", 
 		 	   "Theraband for rehabing STJ for hallux mobility":"op", 
 		 	   "Theraband for weak glutes":"op", 
-			   "slot":["assets/img/questionnaire/foot/tailors-bunions.png-op"],
+			   "slot":["assets/img/questionnaire/foot/hammer-toes.png-op","assets/img/questionnaire/foot/bunions.png-op","assets/img/questionnaire/foot/tailors-bunions.png-op"],
 			}, 
 			"9":{
 			   "Everyday or sports orthotic + 4 degree valgus post":"op", 
