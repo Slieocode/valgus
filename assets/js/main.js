@@ -114,7 +114,7 @@ $(document).ready(function(){
 	/*Header*/	
 	/*Typing Effect*/
 	function typingStart(){
-		let span = $(".txyping .landingH1 span");
+		let span = $(".typing .landingH1 span");
 		if(span.length){
 			var typed = new Typed(".typing .landingH1 span", {
 			  strings: ["Feet", "Knee", " lower back", "legs"],
@@ -169,16 +169,16 @@ $(document).ready(function(){
 	function navMenu(){
 	// home page effects
 	//hero 
-	 let tl3 = new TimelineMax({repeat:-1});
-	 tl3.
-	  to('.landingH1 .underline:nth-child(1)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
-	  .to('.landingH1 .underline:nth-child(1)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
-	  .to('.landingH1 .underline:nth-child(2)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
-	  .to('.landingH1 .underline:nth-child(2)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
-	  .to('.landingH1 .underline:nth-child(3)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
-	  .to('.landingH1 .underline:nth-child(3)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
-	  .to('.landingH1 .underline:nth-child(4)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
-	  .to('.landingH1 .underline:nth-child(4)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+	 // let tl3 = new TimelineMax({repeat:-1});
+	 // tl3.
+	 //  to('.landingH1 .underline:nth-child(1)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	 //  .to('.landingH1 .underline:nth-child(1)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+	 //  .to('.landingH1 .underline:nth-child(2)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	 //  .to('.landingH1 .underline:nth-child(2)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+	 //  .to('.landingH1 .underline:nth-child(3)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	 //  .to('.landingH1 .underline:nth-child(3)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
+	 //  .to('.landingH1 .underline:nth-child(4)', 1.5, {y:"0%", ease: Elastic.easeOut.config(2, 1.5), delay:0, stagger:1})
+	 //  .to('.landingH1 .underline:nth-child(4)', 1.2, {y:"-200%", ease:Power4.easeIn, delay:0.5, stagger:1})
 
 	sal()
 

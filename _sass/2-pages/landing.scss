@@ -66,23 +66,7 @@ header{
 
 		.typing{
 			h1:last-child{
-				text-align: center;
-			    color: #000;
-			    font-size: 2em;
-			    position: relative !important;
-			    text-align: left !important;
-			    margin: 8em 0 1em;
-			    height: 60px;
-			    overflow: hidden;
-			    color: #FFF !important;
-			    width: 39%;
-			    line-height: 36px;
-				span{
-					font-family: 'Merienda', cursive;
-					position: absolute;
-					transform:translateY(120%);
-					margin-left:15px;
-				}
+			    margin: 2em 0 1em;
 			}
 		}
 	}
@@ -140,12 +124,21 @@ header{
 }
 
 .quiz{
-	> h1{
-		font-size:3em
+	 h1{
+		font-size:2.1em;
+		width:500px !important;
+		background: black;
+		color:#FFF;
+	    transform: translate(50%, -50%);
+	    right: 50%;		
+	}
+	p:first-child{
+		padding-top:10%;
 	}
 	p{
 	    color: #232323;
-	    font-size: 1.5em;		
+	    font-size: 1.5em;
+	    // margin-top:10%		
 	}
 	.infographic{
 		display: flex;
